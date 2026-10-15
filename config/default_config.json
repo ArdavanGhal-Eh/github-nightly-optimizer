@@ -1,0 +1,36 @@
+{
+  "github_user": "ArdavanGhal-Eh",
+  "monitored_directories": [
+    "C:\\Users\\ardav\\OneDrive\\Desktop\\پروژه_های گیت_هاب (Portfolio Projects) - اردوان قلعه",
+    "C:\\Users\\ardav\\Desktop\\face_finder",
+    "C:\\Users\\ardav\\.gemini\\antigravity\\scratch\\extracted_portfolio\\All_Projects_Ardavan_Ghal-Eh"
+  ],
+  "target_repos": ["*"],
+  "excluded_repos": [],
+  "delivery_strategy": "pr",
+  "branch_prefix": "nightly/opt",
+  "nightly_schedule": {
+    "enabled": true,
+    "time": "02:00",
+    "task_name": "GitHubNightlyOptimizer"
+  },
+  "quality_gates": {
+    "min_score_for_pr": 70.0,
+    "allow_regression": false,
+    "require_tests_pass": true
+  },
+  "enabled_analyzers": [
+    "code_quality",
+    "security",
+    "test_suite",
+    "documentation",
+    "ci_cd"
+  ],
+  "enabled_optimizers": [
+    "code_cleaner",
+    "test_synthesizer",
+    "ci_cd_hardener",
+    "doc_enhancer",
+    "security_guard"
+  ]
+}
