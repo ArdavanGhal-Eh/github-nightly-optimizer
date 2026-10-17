@@ -119,7 +119,6 @@ class GitService:
         """Uses GitHub CLI (`gh`) to open a Pull Request."""
         cmd = [
             "gh", "pr", "create",
-            "--repo", self.repo_path,
             "--title", title,
             "--body", body,
             "--head", head_branch,
